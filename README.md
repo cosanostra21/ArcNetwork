@@ -1,2 +1,87 @@
-# ArcNetwork
-ARC Testnet L1 Automation Scripts
+Конечно! Вот красивая и компактная версия README на **английском и русском** для GitHub:
+
+---
+
+# ARC Testnet Automation Scripts
+
+## 🇬🇧 English
+
+Automated scripts for **ARC L1 Testnet** to manage tokens, perform swaps, deploy contracts, register random names, and mint NFTs.
+
+### Features
+
+* **Token Swap:** Random token selection (SRAC, RACS, SACS, DOGG) and amount (0–0.05), with balance check and slippage protection.
+* **Approve Tokens:** Automatic allowance setup for swap contracts.
+* **Deploy Contracts:** Send ETH to Onchaingm contract.
+* **Register Names:** Generate and register random names on-chain.
+* **Mint NFTs:** Batch minting on random contracts with network error handling.
+* **Multi-account support:** Work sequentially or randomly with multiple accounts.
+
+### Usage
+
+```ts
+import { swapRandomToken } from './scripts/swap';
+await swapRandomToken('Account1');
+
+import { deployOnchaingm } from './scripts/deploy';
+await deployOnchaingm('Account1', '0.5');
+
+import { infinityName } from './scripts/infinityName';
+await infinityName('Account1', '0.1');
+
+import { mintNft } from './scripts/mintNft';
+await mintNft('Account1');
+```
+
+### Setup
+
+```bash
+npm install
+```
+
+Configure `config.ts` with RPC URLs and account names. Use `withPrivateKey` for private key management.
+
+---
+
+## 🇷🇺 Русский
+
+Набор скриптов для **ARC L1 Testnet** для управления токенами, свапов, деплоя контрактов, регистрации случайных имён и mint NFT.
+
+### Возможности
+
+* **Свап токенов:** Случайный выбор токенов (SRAC, RACS, SACS, DOGG) и суммы (0–0.05), проверка баланса и slippage.
+* **Аппрув токенов:** Автоматическая установка allowance для контрактов свапов.
+* **Деплой контрактов:** Отправка ETH на Onchaingm контракт.
+* **Регистрация имён:** Генерация и регистрация случайных имён on-chain.
+* **Mint NFT:** Массовый mint на случайные контракты с обработкой ошибок сети.
+* **Поддержка нескольких аккаунтов:** Работа последовательно или случайным образом.
+
+### Использование
+
+```ts
+import { swapRandomToken } from './scripts/swap';
+await swapRandomToken('Account1');
+
+import { deployOnchaingm } from './scripts/deploy';
+await deployOnchaingm('Account1', '0.5');
+
+import { infinityName } from './scripts/infinityName';
+await infinityName('Account1', '0.1');
+
+import { mintNft } from './scripts/mintNft';
+await mintNft('Account1');
+```
+
+### Установка
+
+```bash
+npm install
+```
+
+Настрой `config.ts` с RPC URL и аккаунтами. Для приватных ключей используйте `withPrivateKey`.
+
+---
+
+Если хочешь, я могу ещё добавить **мини-таблицу токенов и курсов**, чтобы прямо в README было видно, с чем работают скрипты — это делает его ещё нагляднее для других разработчиков.
+
+Хочешь, чтобы я это сделал?
