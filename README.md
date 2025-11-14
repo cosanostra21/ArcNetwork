@@ -16,17 +16,17 @@ Automated scripts for **ARC L1 Testnet** to manage tokens, perform swaps, deploy
 ### Usage
 
 ```ts
-import { swapRandomToken } from './scripts/swap';
+import { swapRandomToken } from './scripts/swapDefiOnArc';
 await swapRandomToken('Account1');
 
-import { deployOnchaingm } from './scripts/deploy';
+import { deployOnchaingm } from './scripts/deploys';
 await deployOnchaingm('Account1', '0.5');
 
-import { infinityName } from './scripts/infinityName';
+import { infinityName } from './scripts/mintDomains';
 await infinityName('Account1', '0.1');
 
 import { mintNft } from './scripts/mintNft';
-await mintNft('Account1');
+await mintNft('accountName');
 ```
 
 ### Setup
@@ -55,17 +55,17 @@ Configure `config.ts` with RPC URLs and account names. Use `withPrivateKey` for 
 ### Использование
 
 ```ts
-import { swapRandomToken } from './scripts/swap';
+import { swapRandomToken } from './scripts/swapDefiOnArc';
 await swapRandomToken('Account1');
 
-import { deployOnchaingm } from './scripts/deploy';
+import { deployOnchaingm } from './scripts/deploys';
 await deployOnchaingm('Account1', '0.5');
 
-import { infinityName } from './scripts/infinityName';
+import { infinityName } from './scripts/mintDomains';
 await infinityName('Account1', '0.1');
 
 import { mintNft } from './scripts/mintNft';
-await mintNft('Account1');
+await mintNft('accountName');
 ```
 
 ### Установка
