@@ -17,13 +17,13 @@ Automated scripts for **ARC L1 Testnet** to manage tokens, perform swaps, deploy
 
 ```ts
 import { swapRandomToken } from './scripts/swapDefiOnArc';
-await swapRandomToken('Account1');
+await swapRandomToken('accountName');
 
 import { deployOnchaingm } from './scripts/deploys';
-await deployOnchaingm('Account1', '0.5');
+await deployOnchaingm('accountName', '0.5');
 
 import { infinityName } from './scripts/mintDomains';
-await infinityName('Account1', '0.1');
+await infinityName('accountName', '0.1');
 
 import { mintNft } from './scripts/mintNft';
 await mintNft('accountName');
@@ -56,13 +56,13 @@ Configure `config.ts` with RPC URLs and account names. Use `withPrivateKey` for 
 
 ```ts
 import { swapRandomToken } from './scripts/swapDefiOnArc';
-await swapRandomToken('Account1');
+await swapRandomToken('accountName');
 
 import { deployOnchaingm } from './scripts/deploys';
-await deployOnchaingm('Account1', '0.5');
+await deployOnchaingm('accountName', '0.5');
 
 import { infinityName } from './scripts/mintDomains';
-await infinityName('Account1', '0.1');
+await infinityName('accountName', '0.1');
 
 import { mintNft } from './scripts/mintNft';
 await mintNft('accountName');
